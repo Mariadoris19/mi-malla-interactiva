@@ -9,7 +9,7 @@ document.querySelectorAll('.ramo').forEach(ramo => {
 
 function actualizarEstado() {
   document.querySelectorAll('.ramo').forEach(ramo => {
-    const requisitos = ramo.dataset.requisitos.split(',').filter(Boolean);
+    const requisitos = ramo.dataset.requisitos.split(',').map(r => r.trim()).filter(Boolean);
     const aprobados = requisitos.every(reqId =>
       document.querySelector(`.ramo[data-id="${reqId}"]`)?.classList.contains('aprobado')
     );
