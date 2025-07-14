@@ -1,0 +1,22 @@
+# mi-malla-interactiva
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla Interactiva</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <h1>Malla Interactiva - Veterinaria</h1>
+  <div class="malla">
+    <div class="ramo" data-id="Estrategia" data-requisitos="">Estrategia</div>
+    <div class="ramo bloqueado" data-id="Anatomía" data-requisitos="Estrategia">Anatomía</div>
+    <div class="ramo bloqueado" data-id="Fisiología" data-requisitos="Anatomía">Fisiología</div>
+    <div class="ramo bloqueado" data-id="Farmacología" data-requisitos="Fisiología">Farmacología</div>
+    <!-- Agrega aquí todos los ramos con sus requisitos -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
